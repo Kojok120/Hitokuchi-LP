@@ -1,0 +1,7 @@
+# Hitokuchi LP — robots.txt
+# Allow all crawlers; surface the sitemap for discovery.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://kojok120.github.io/Hitokuchi-LP/sitemap.xml
