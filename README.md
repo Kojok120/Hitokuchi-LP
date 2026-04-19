@@ -72,7 +72,7 @@ Check:
 - [ ] `index.html` renders correctly in Safari and Chrome (light + dark).
 - [ ] `index.en.html` renders correctly.
 - [ ] Header language switcher works (ja ⇄ en).
-- [ ] Every anchor link (`#different`, `#pricing`, etc.) scrolls smoothly.
+- [ ] Every anchor link (`#different`, `#faq`, etc.) scrolls smoothly.
 - [ ] `privacy.html`, `terms.html`, `support.html`, `404.html` all render.
 - [ ] No console errors, no 404s for images/CSS.
 - [ ] Tab order is logical; skip-link appears on first Tab press.
@@ -212,24 +212,24 @@ After deployment, run through this checklist on the live URL:
 
 ### `index.html` (Japanese primary)
 
-10 sections matching the GTM appeal v1.2 spec:
+10 sections matching the v4 GTM appeal spec (brand warmth × quiet root-need framing):
 
-1. Hero — copy *ひとくち、飲んだ？* + 3-item lead list + App Store badge
-2. Different — three core differentiators (お茶も味噌汁も / VoiceOver First / サブスクなし)
-3. Japanese drinks — beverage grid with water coefficients (MEXT reference)
-4. VoiceOver First — accessibility story
-5. Pricing — 4 promise badges + full price table + Secondary button CTA
-6. Hitokuchi unit (234 mL) — breakdown and theme/voice pack context
-7. Messages — three tone cards (標準 / 関西 / 京都) + voice pack mini-section
-8. Gallery — one real onboarding screenshot + honest "capture pending" placeholder cards for the remaining screens (Round 2)
-9. FAQ — 11 items
-10. Closing — hero copy reprise + second App Store badge
+1. `#hero` — *ひとくち、飲んだ？* / *その小さなひとこえが、家族と自分の、やさしい夏になる。*
+2. `#empathy` — quiet acknowledgment that summers feel harder lately
+3. `#brand-story` — grandmother anecdote, written to preserve her dignity
+4. `#facts` — MHLW hydration reference, cited as a quiet measuring stick (no alarm)
+5. `#gap` — the small distance between "I drank" and "enough"
+6. `#solution` — what Hitokuchi quietly does, in brand language
+7. `#how-it-works` — three steps (朝 / 昼のそば / 夕暮れ)
+8. `#trust` — honest list of what the app does and doesn't do
+9. `#faq` — frequently asked questions
+10. `#closing` — hero copy reprise + App Store badge
 
-The App Store badge appears **twice** (Hero + Closing). Section 5 uses a text Secondary Button CTA per design spec.
+The App Store badge appears **twice** (Hero + Closing). No price is shown anywhere on the LP — pricing is surfaced only via the App Store's own StoreKit UI. The `#pricing` and `#for-loved-ones` sections from earlier iterations were removed (king's post-QA decision).
 
 ### `index.en.html`
 
-English parallel of `index.html`. Gallery currently shows 1 real onboarding shot + 3 placeholder cards (Round 2). All App Store links point to the US storefront path (`apps.apple.com/us/...`).
+English parallel of `index.html`. Same 10 sections. Gallery currently shows 1 real onboarding shot + placeholder cards (Round 2). All App Store links point to the US storefront path (`apps.apple.com/us/...`).
 
 ### `privacy.html`, `terms.html`
 
