@@ -58,25 +58,25 @@ a:focus-visible {
   border-radius: 2px;
 }
 
-/* --- Design tokens (v4: wa-iro palette) ----------------------- */
+/* --- Design tokens (v5: water-blue palette, matches app default theme) --- */
 :root {
-  /* Color — Light (v4 和の色) */
-  --bg-primary:     #F5F3ED;  /* 生成り — main background */
-  --bg-secondary:   #EDE8DC;  /* 薄利休白茶 — section / card bg */
-  --bg-tertiary:    #DCD0C0;  /* 利休白茶 — stronger card bg */
-  --text-primary:   #2B2B2B;  /* 墨 — headings, body strong */
-  --text-secondary: #5C5C5C;  /* 薄墨 — body, caption */
-  --text-tertiary:  #8A8680;  /* 霞墨 — sources, footnotes */
-  --accent-primary: #69825D;  /* 抹茶色 — CTA, links, frames */
-  --accent-primary-hover: #55724C; /* 深抹茶 */
-  --accent-secondary: #C97D60; /* 柿色 — icon accent, number highlight */
-  --accent-success:   #69825D; /* merged with 抹茶色 */
-  --accent-soft-purple: #A288B8; /* 藤紫 — quotes, tags (restrained) */
+  /* Color — Light (v5 水色基調) */
+  --bg-primary:     #F4FBFD;  /* 白水 — main background */
+  --bg-secondary:   #EAF5FA;  /* 薄水 — section / card bg */
+  --bg-tertiary:    #D8ECF5;  /* 淡水 — stronger card bg */
+  --text-primary:   #1E3A4D;  /* 深藍 — headings, body strong */
+  --text-secondary: #5B7E94;  /* 鈍藍 — body, caption */
+  --text-tertiary:  #8FAABD;  /* 霞藍 — sources, footnotes */
+  --accent-primary: #5BADD6;  /* 水色 — CTA, links, frames */
+  --accent-primary-hover: #3E93BF; /* 深水色 */
+  --accent-secondary: #8FCFE8; /* 淡水色 — icon accent, number highlight */
+  --accent-success:   #6BAE9E; /* 青緑 */
+  --accent-soft-purple: #A9B7D4; /* 藍鼠 — quotes, tags (restrained) */
   --accent-sakura-ash:  #E8D3D1; /* 灰桜 — faint bg on FAQ emphasis */
-  --border-default:   #D8D0C2; /* 細茶 */
-  --text-on-accent:   #F5F3ED; /* 生成り白 on 抹茶色 button */
-  --shadow-subtle: 0 1px 3px rgba(43, 43, 43, 0.05);
-  --shadow-medium: 0 2px 8px rgba(43, 43, 43, 0.08);
+  --border-default:   #CCE4EE; /* 細水 */
+  --text-on-accent:   #FFFFFF; /* 白 on 水色 button */
+  --shadow-subtle: 0 1px 3px rgba(30, 58, 77, 0.06);
+  --shadow-medium: 0 2px 8px rgba(30, 58, 77, 0.10);
 
   /* Typography — v4 two-face system */
   --font-serif-ja: "Shippori Mincho B1", "BIZ UDPMincho",
@@ -121,22 +121,22 @@ a:focus-visible {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-primary:    #1F1D1A;  /* 墨藍 */
-    --bg-secondary:  #2A2622;  /* 深藍鼠 */
-    --bg-tertiary:   #33302A;  /* 濃茶墨 */
-    --text-primary:  #F0ECE0;  /* 生成り白 */
-    --text-secondary:#B8B1A5;  /* 薄生成り */
-    --text-tertiary: #8A8680;  /* 霞墨 */
-    --accent-primary:   #9AB589; /* 若竹 (抹茶明) */
-    --accent-primary-hover: #AAC299; /* 淡竹 */
-    --accent-secondary: #D8957B; /* 明柿 */
-    --accent-success:   #9AB589;
-    --accent-soft-purple: #C4ADD4; /* 明藤 */
-    --accent-sakura-ash:  #443834; /* 暗灰桜 */
-    --border-default:   #3D3932; /* 暗細茶 */
-    --text-on-accent:   #1F1D1A;
-    --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.25);
-    --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.35);
+    --bg-primary:    #121C24;  /* 深藍墨 */
+    --bg-secondary:  #1D2A34;  /* 藍鼠 */
+    --bg-tertiary:   #253542;  /* 濃藍 */
+    --text-primary:  #E8F4FC;  /* 白水 */
+    --text-secondary:#9FBED1;  /* 薄水 */
+    --text-tertiary: #6E8FA3;  /* 霞水 */
+    --accent-primary:   #70BEDE; /* 明水色 */
+    --accent-primary-hover: #8ACCE6; /* 淡水色 */
+    --accent-secondary: #9FD5EC; /* 霞水色 */
+    --accent-success:   #7DBAAB;
+    --accent-soft-purple: #B8C5E0; /* 明藍鼠 */
+    --accent-sakura-ash:  #38303A; /* 暗灰桜 */
+    --border-default:   #2E4050; /* 暗細水 */
+    --text-on-accent:   #121C24;
+    --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.28);
+    --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.38);
   }
 }
 
@@ -1134,7 +1134,73 @@ html[lang="en"] .empathy-close { font-family: var(--font-serif-en); }
   text-align: center;
 }
 
-/* Hero SVG decorative groups — inherit currentColor = matcha-tint ink. */
+/* Hero SVG decorative groups — inherit currentColor = water-tint ink. */
 .hero-scene .sunrays,
 .hero-scene .steam { stroke: currentColor; }
+
+/* --- Screenshots section ------------------------------------- */
+.screenshots {
+  padding: var(--sp-4xl) 0;
+  background-color: var(--bg-primary);
+}
+.screenshots .container { text-align: center; }
+.screenshots h2 { margin-bottom: var(--sp-m); }
+.screenshots-intro {
+  color: var(--text-secondary);
+  max-width: 34em;
+  margin: 0 auto var(--sp-2xl);
+  text-align: center;
+}
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--sp-2xl);
+  align-items: start;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 var(--page-gutter);
+}
+.screenshot-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.screenshot-frame {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: var(--sp-l);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-medium);
+  background-color: var(--bg-secondary);
+}
+.screenshot-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.screenshot-item h3 {
+  font-family: var(--font-serif-ja);
+  font-size: 1.125rem;
+  color: var(--text-primary);
+  margin: 0 0 var(--sp-xs);
+}
+html[lang="en"] .screenshot-item h3 {
+  font-family: var(--font-serif-en);
+}
+.screenshot-item p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 22em;
+}
+@media (max-width: 760px) {
+  .screenshots-grid {
+    grid-template-columns: 1fr;
+    gap: var(--sp-3xl);
+  }
+  .screenshot-frame { max-width: 260px; }
+}
 
