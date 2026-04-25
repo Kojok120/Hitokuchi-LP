@@ -244,13 +244,13 @@ small, figcaption, .caption {
   position: sticky;
   top: 0;
   z-index: 50;
-  background-color: rgba(245, 243, 237, 0.88);
+  background-color: rgba(244, 251, 253, 0.88); /* matches --bg-primary */
   -webkit-backdrop-filter: saturate(180%) blur(8px);
   backdrop-filter: saturate(180%) blur(8px);
   border-bottom: 1px solid var(--border-default);
 }
 @media (prefers-color-scheme: dark) {
-  .site-header { background-color: rgba(31, 29, 26, 0.88); }
+  .site-header { background-color: rgba(18, 28, 36, 0.88); /* matches dark --bg-primary */ }
 }
 .site-header nav {
   display: flex;
